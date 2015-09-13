@@ -38,7 +38,7 @@ public class LoginController extends KolaController implements ActionListener,
 		
 		this.regionsModel = new RegionsComboBoxModel();
 		this.view.regionField.setModel(this.regionsModel);
-	//	this.newsModel = new LoLNewsTableModel(this.regionsModel.getSelectedRegion().getNewsURL());
+		this.newsModel = new LoLNewsTableModel(this.regionsModel.getSelectedRegion().getNewsURL());
 		this.view.newsList.setModel(this.newsModel);
 		
 		if (!Configuration.getDefaultUsername().isEmpty()) {

@@ -6,7 +6,7 @@
 		<name>Europe West</name>
 		<server>prod.euw1.lol.riotgames.com</server>
 		<loginQueue>https://lq.euw1.lol.riotgames.com/</loginQueue>
-		<newsURL>http://euw.leagueoflegends.com/board/external.php?type=RSS2&amp;forumids=3</newsURL>
+		<newsURL>http://feed43.com/league-of-legends-news.xml</newsURL>
 		<XMPPserver>chat.euw1.lol.riotgames.com</XMPPserver>
 	</server>
 	<server>
