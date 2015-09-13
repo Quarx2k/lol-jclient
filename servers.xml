@@ -4,10 +4,10 @@
 		<region>EUW</region>
 		<platform>EUW1</platform>
 		<name>Europe West</name>
-		<server>prod.eu.lol.riotgames.com</server>
-		<loginQueue>https://lq.eu.lol.riotgames.com/</loginQueue>
+		<server>prod.euw1.lol.riotgames.com</server>
+		<loginQueue>https://lq.euw1.lol.riotgames.com/</loginQueue>
 		<newsURL>http://euw.leagueoflegends.com/board/external.php?type=RSS2&amp;forumids=3</newsURL>
-		<XMPPserver>chat.eu.lol.riotgames.com</XMPPserver>
+		<XMPPserver>chat.euw1.lol.riotgames.com</XMPPserver>
 	</server>
 	<server>
 		<region>NA</region>

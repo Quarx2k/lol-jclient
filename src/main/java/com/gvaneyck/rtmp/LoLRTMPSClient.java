@@ -456,6 +456,7 @@ public class LoLRTMPSClient extends RTMPSClient
         ObjectMap result;
         try {
             response = readAll(connection.getInputStream());
+            System.out.println(" Resopnse: " + response);
             result = (ObjectMap) JSON.parse(response);
         }
         catch (IOException e) {
@@ -470,7 +471,7 @@ public class LoLRTMPSClient extends RTMPSClient
 
         // Handle login queue
         if (!result.containsKey("token")) {
-            int node = result.getInt("node"); // Our login queue ID
+            long node = result.getLong("node"); // Our login queue ID
             String nodeStr = "" + node;
             String champ = result.getString("champ"); // The name of our login
                                                       // queue
