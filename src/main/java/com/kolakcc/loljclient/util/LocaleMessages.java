@@ -12,7 +12,7 @@ public class LocaleMessages {
 	ResourceBundle internalBundle;
 	
 	public LocaleMessages(String bundleName) {
-		internalBundle = ResourceBundle.getBundle("com.kolakcc.loljclient.view.locale."+bundleName, Locale.getDefault());
+		internalBundle = ResourceBundle.getBundle("locale."+bundleName, Locale.getDefault());
 		this.bundleName = bundleName;
 	}
 	
