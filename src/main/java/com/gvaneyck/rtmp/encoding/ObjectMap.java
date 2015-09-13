@@ -20,24 +20,25 @@ public class ObjectMap extends HashMap<String, Object> {
     public ObjectMap getMap(String key) {
         return (ObjectMap)get(key);
     }
-
     /**
      * Convenience for retrieving Strings
-     * 
+     *
      * @param key The key of the String
      * @return The String
      */
-    public String getString(String key) {
+    public String getString(String key)
+    {
         return (String)get(key);
     }
 
     /**
      * Convenience for retrieving integers
-     * 
+     *
      * @param key The key of the integer
      * @return The integer
      */
-    public Integer getInt(String key) {
+    public Integer getInt(String key)
+    {
         Object val = get(key);
         if (val == null)
             return null;
@@ -48,28 +49,13 @@ public class ObjectMap extends HashMap<String, Object> {
     }
 
     /**
-     * Convenience for retrieving longs
-     * 
-     * @param key The key of the long
-     * @return The long
-     */
-    public Long getLong(String key) {
-        Object val = get(key);
-        if (val == null)
-            return null;
-        else if (val instanceof Integer)
-            return ((Integer)val).longValue();
-        else
-            return ((Double)val).longValue();
-    }
-    
-    /**
      * Convenience for retrieving doubles
-     * 
+     *
      * @param key The key of the double
      * @return The double
      */
-    public Double getDouble(String key) {
+    public Double getDouble(String key)
+    {
         Object val = get(key);
         if (val == null)
             return null;
@@ -81,11 +67,12 @@ public class ObjectMap extends HashMap<String, Object> {
 
     /**
      * Convenience for retrieving booleans
-     * 
+     *
      * @param key The key of the boolean
      * @return The boolean
      */
-    public Boolean getBool(String key) {
+    public Boolean getBool(String key)
+    {
         return (Boolean)get(key);
     }
 
